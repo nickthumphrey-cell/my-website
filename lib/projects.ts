@@ -25,37 +25,33 @@ export type Project = {
 // Edit this file to fill in each project page without changing the page layout.
 export const projects: Project[] = [
   {
-    slug: "transportation-efficiency-analysis",
-    title: "Transportation Efficiency Analysis",
+    slug: "applied-autonomous-driving-machine-learning-class",
+    title: "Applied Autonomous Driving Machine Learning Class",
     description:
-      "Analyzed transportation systems through an engineering lens, focusing on efficiency, constraints, and practical improvements.",
+      "Trained machine learning models to control an autonomous vehicle, employing multiple strategies.",
     summary:
       "Use this space for the short version of the project: what question you investigated, why it mattered, and what you found.",
-    tags: ["Mechanical Engineering", "Systems", "Analysis"],
+    tags: ["Software Development", "Machine Learning"],
     details: [
-      { label: "Role", value: "Project lead / analyst" },
-      { label: "Timeline", value: "Add date or semester" },
-      { label: "Tools", value: "Add tools, models, or methods" },
+      { label: "Role", value: "Student" },
+      { label: "Timeline", value: "Spring 2026" },
+      { label: "Tools", value: "TensorFlow, Roboflow, Foxglove, Colab" },
     ],
     sections: [
       {
-        heading: "Problem",
-        body: "Describe the transportation system, constraint, or efficiency question you focused on.",
+        heading: "Goal",
+        body: "In Machine Learning for Autonomous Vehicles, the goal was to create algorithms/models that could autonomously control a RC car around a race track.",
       },
       {
         heading: "Approach",
-        body: "Explain the data, assumptions, calculations, interviews, models, or engineering reasoning you used.",
-      },
-      {
-        heading: "Outcome",
-        body: "Summarize the most important result, recommendation, design insight, or tradeoff.",
+        body: "Approaches we explored included hard coded control using canny edge detection, mixed control using machine learning algorithms to semantically detect lane lines and signs with hard coded control based upon sensor inputs, and end to end machine learning control where the algorithm is fed sensor inputs and outputs steering angle.",
       },
       {
         heading: "What I learned",
-        body: "Add the skills, concepts, or judgment you developed while working on this project.",
+        body: "I learned how to clean, label, balance, and augment data for training of a vision-based machine learning model. Additionally, I learned how to train convolutional neural network models for semantic segmentation and end-to-end models using TensorFlow. I also learned the basics of ROS2, Linux, and Docker.",
       },
     ],
-    links: [],
+    links: ["https://vayrolab.com/"],
   },
   {
     slug: "public-interest-technology-experiments",

@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+To clone website locally: git clone https://github.com/nickthumphrey-cell/my-website
+for a specific branch: git clone -b <branch-name> https://github.com/nickthumphrey-cell/my-website
+
+to install required packages, run inside the project folder: npm install
+
 First, run the development server:
 
 ```bash

@@ -49,7 +49,7 @@ export default function PersonalWebsite() {
         <header className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-6">
             <p className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-600 shadow-sm ring-1 ring-slate-200">
-              Mechanical engineering student - Builder - Impact-focused learner
+              Mechanical engineering graduate - Builder - Impact-focused learner
             </p>
             <div className="space-y-4">
               <h1 className="max-w-3xl text-5xl font-bold tracking-tight md:text-7xl">
@@ -87,7 +87,7 @@ export default function PersonalWebsite() {
               </div>
               <h2 className="text-2xl font-semibold">Current focus</h2>
               <p className="leading-7 text-slate-600">
-                Testing career directions through small projects in AI governance, worker-centered technology, supply-chain accountability, and food-systems change.
+                Testing career directions through a full time position in fire protection consulting and small projects in entrepreneurship and AI development.
               </p>
             </CardContent>
           </Card>
@@ -129,7 +129,6 @@ export default function PersonalWebsite() {
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
             <p className="max-w-md text-sm leading-6 text-slate-600">
-              Replace these with your strongest work, class projects, prototypes, writing, or experiments.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">

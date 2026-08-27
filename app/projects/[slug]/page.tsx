@@ -108,8 +108,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <div className="space-y-2">
                     {project.links.map((link) => (
                       <a
-                        key={link.href}
-                        href={link.href}
+                        key={link}
+                        href={link}
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center justify-between rounded-2xl bg-slate-100 px-4 py-3 text-sm font-medium text-slate-800 transition hover:bg-slate-200"
