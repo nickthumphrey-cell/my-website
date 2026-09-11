@@ -108,8 +108,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <div className="space-y-2">
                     {project.links.map((link) => (
                       <a
-                        key={link}
-                        href={link}
+                        key={link.href}
+                        href={link.href}
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center justify-between rounded-2xl bg-slate-100 px-4 py-3 text-sm font-medium text-slate-800 transition hover:bg-slate-200"
@@ -120,18 +120,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     ))}
                   </div>
                 ) : (
-                  <p className="text-sm leading-6 text-slate-600">
-                    Add a GitHub repo, live demo, paper, or slide deck link in the project data when you have one.
-                  </p>
+                  <p className="text-sm leading-6 text-slate-600">No public links are available for this project yet.</p>
                 )}
               </CardContent>
             </Card>
 
             <Card className="rounded-3xl border-slate-200 bg-white shadow-sm">
               <CardContent className="space-y-3 p-5">
-                <h2 className="text-lg font-semibold">Template note</h2>
+                <h2 className="text-lg font-semibold">Portfolio</h2>
                 <p className="text-sm leading-6 text-slate-600">
-                  Fill in the summary, details, sections, and links for this project from one shared data file.
+                  More engineering, machine-learning, and education projects are featured on the home page.
                 </p>
               </CardContent>
             </Card>

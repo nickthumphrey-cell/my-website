@@ -56,7 +56,7 @@ export default function PersonalWebsite() {
                 Building technical skills for a fairer, more resilient world.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-600">
-                I&apos;m a mechanical engineering student interested in AI, public-interest technology, institutional decision-making, climate and energy, and practical tools that reduce avoidable suffering.
+                I&apos;m a mechanical engineering graduate interested in AI, public-interest technology, climate and energy, and practical tools that create real-world value.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
@@ -99,10 +99,10 @@ export default function PersonalWebsite() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-slate-600">
             <p>
-              I like building, explaining, coding, and working on problems where technical decisions shape people&apos;s lives. I&apos;m especially interested in systems where incentives, institutions, and technology interact.
+              I like building, explaining, coding, and working on problems where technical decisions shape people&apos;s lives. My projects span autonomous systems, sustainable materials, and hands-on engineering education.
             </p>
             <p>
-              Right now I&apos;m looking for practical ways to combine engineering judgment, software skills, and public-interest work into projects with real-world value.
+              Right now I&apos;m looking for practical ways to combine engineering judgment, software skills, and thoughtful collaboration into projects with real-world value.
             </p>
           </div>
         </section>
@@ -128,8 +128,7 @@ export default function PersonalWebsite() {
         <section id="projects" className="space-y-6">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
-            <p className="max-w-md text-sm leading-6 text-slate-600">
-            </p>
+            <p className="max-w-md text-sm leading-6 text-slate-600">A selection of work across machine learning, engineering design, and STEM instruction.</p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {projects.map((project) => (
