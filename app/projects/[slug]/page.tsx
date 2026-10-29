@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -135,6 +136,57 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Card>
           </aside>
         </div>
+
+        {project.images.length > 0 && (
+          <section aria-labelledby="project-gallery-heading" className="space-y-5">
+            <h2 id="project-gallery-heading" className="text-2xl font-semibold tracking-tight">
+              Project gallery
+            </h2>
+            <div className="grid items-start gap-5 sm:grid-cols-2">
+              {project.images.map((image, index) => (
+                <figure key={image.src} className={index === 0 || image.videoSrc ? "sm:col-span-2" : undefined}>
+                  {image.videoSrc ? (
+                    <video
+                      controls
+                      playsInline
+                      preload="none"
+                      poster={image.src}
+                      width={image.width}
+                      height={image.height}
+                      aria-label={image.alt}
+                      className="h-auto max-h-[36rem] w-full rounded-3xl bg-white object-contain ring-1 ring-slate-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950"
+                    >
+                      <source src={image.videoSrc} type="video/mp4" />
+                      <a href={image.videoSrc}>Watch the project demonstration</a>
+                    </video>
+                  ) : (
+                    <a
+                      href={image.src}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`View full-size image: ${image.alt} (opens in a new tab)`}
+                      className="block overflow-hidden rounded-3xl bg-white ring-1 ring-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-50"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={image.width}
+                        height={image.height}
+                        sizes={index === 0 ? "(max-width: 1024px) calc(100vw - 48px), 976px" : "(max-width: 639px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 34px), 478px"}
+                        className="h-auto max-h-[36rem] w-full object-contain"
+                      />
+                    </a>
+                  )}
+                  {image.caption && (
+                    <figcaption className="px-1 pt-3 text-sm leading-6 text-slate-600">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
       </section>
     </main>
   );

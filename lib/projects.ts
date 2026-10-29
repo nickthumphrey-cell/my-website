@@ -8,6 +8,15 @@ export type ProjectLink = {
   href: string;
 };
 
+export type ProjectImage = {
+  src: string;
+  videoSrc?: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -20,6 +29,7 @@ export type Project = {
   }[];
   sections: ProjectSection[];
   links: ProjectLink[];
+  images: ProjectImage[];
 };
 
 export const projects: Project[] = [
@@ -53,6 +63,32 @@ export const projects: Project[] = [
       },
     ],
     links: [],
+    images: [
+      {
+        src: "/images/projects/machine-learning-autonomous-vehicles/pilotnet.jpg",
+        videoSrc: "/images/projects/machine-learning-autonomous-vehicles/pilotnet.mp4",
+        alt: "PilotNet architecture with driving-camera input and predicted steering-angle output.",
+        width: 1920,
+        height: 922,
+        caption: "PilotNet: an end-to-end neural network that predicts steering angle from camera images.",
+      },
+      {
+        src: "/images/projects/machine-learning-autonomous-vehicles/unet.jpg",
+        videoSrc: "/images/projects/machine-learning-autonomous-vehicles/unet.mp4",
+        alt: "U-Net encoder-decoder architecture with a driving image and lane-segmentation mask.",
+        width: 1672,
+        height: 940,
+        caption: "U-Net: turning driving-camera images into lane-segmentation masks.",
+      },
+      {
+        src: "/images/projects/machine-learning-autonomous-vehicles/speed-control.jpg",
+        videoSrc: "/images/projects/machine-learning-autonomous-vehicles/speed-control.mp4",
+        alt: "An RC car on an indoor course alongside its camera view with lane and object-detection overlays.",
+        width: 1344,
+        height: 372,
+        caption: "Speed-control demonstration with the RC car and its perception overlays shown side by side.",
+      },
+    ],
   },
   {
     slug: "pufferfish-rov-instruction",
@@ -84,6 +120,22 @@ export const projects: Project[] = [
       },
     ],
     links: [],
+    images: [
+      {
+        src: "/images/projects/pufferfish-rov-instruction/pool-testing.webp",
+        alt: "Students gathered around an outdoor pool testing their remotely operated underwater vehicles.",
+        width: 1440,
+        height: 1920,
+        caption: "Pool testing gave students a chance to try their ROV designs in the water.",
+      },
+      {
+        src: "/images/projects/pufferfish-rov-instruction/rov-build.webp",
+        alt: "A Pufferfish ROV control board with fuse holders, indicator LEDs, resistors, and wiring connections.",
+        width: 1440,
+        height: 1920,
+        caption: "A close-up of the Pufferfish ROV control board used during the build process.",
+      },
+    ],
   },
   {
     slug: "senior-design-stakblocks",
@@ -115,6 +167,36 @@ export const projects: Project[] = [
       },
     ],
     links: [],
+    images: [
+      {
+        src: "/images/projects/senior-design-stakblocks/team.webp",
+        alt: "The eight-person StakBlocks senior design team displaying components of the fiber-preparation system.",
+        width: 1920,
+        height: 1440,
+        caption: "The StakBlocks senior design team with components from the project.",
+      },
+      {
+        src: "/images/projects/senior-design-stakblocks/preheating-system.webp",
+        alt: "A tall metal duct and hopper connected to a heater by insulated flexible ducting.",
+        width: 1440,
+        height: 1920,
+        caption: "The preheating assembly, including ducting and insulation.",
+      },
+      {
+        src: "/images/projects/senior-design-stakblocks/controls-prototype.webp",
+        alt: "An Arduino connected to a breadboard, thermocouple, and LCD showing temperature-control readings.",
+        width: 1920,
+        height: 1440,
+        caption: "The Arduino temperature-control prototype with its sensor and LCD display.",
+      },
+      {
+        src: "/images/projects/senior-design-stakblocks/electrical-enclosure.webp",
+        alt: "Inside an electrical enclosure showing a solid-state relay, fuse holders, terminal connections, and wiring.",
+        width: 1440,
+        height: 1920,
+        caption: "Electrical enclosure showing the relay, fuse holders, and wiring connections.",
+      },
+    ],
   },
 ];
 
