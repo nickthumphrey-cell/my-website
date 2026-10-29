@@ -1,0 +1,11 @@
+slug: "applied-autonomous-driving-machine-learning-class",
+    title: "Applied Autonomous Driving Machine Learning Class",
+    description:
+      "Trained machine learning models to control an autonomous vehicle, employing multiple strategies.",
+    summary:
+      "Use this space for the short version of the project: what question you investigated, why it mattered, and what you found.",
+    tags: ["Software Development", "Machine Learning"],
+    details: [
+      { label: "Role", value: "Student" },
+      { label: "Timeline", value: "Spring 2026" },
+      { label: "Tools", value: "Add tools, models, or methods" },
